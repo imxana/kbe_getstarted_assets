@@ -1,0 +1,34 @@
+<root>
+	<!--属性定义-->
+	<Properties>
+	</Properties>
+
+	<ClientMethods>
+	</ClientMethods>
+
+	<!-- BaseApp上的远程方法 -->
+	<BaseMethods>
+		<!-- 登录到这个scene -->
+		<loginToScene>
+			<!-- 登录者的ENTITYCALL -->
+			<Arg>   ENTITYCALL	</Arg>
+		</loginToScene>
+		<!-- 登出场景 -->
+		<logoutScene>
+			<!-- 登出者的实体id -->
+			<Arg>		INT32	</Arg>
+		</logoutScene>
+	</BaseMethods>
+
+	<!-- CellApp上的远程方法 -->
+	<CellMethods>
+		<!-- 进入后的事件通知 -->
+		<onEnter>
+			<Arg>	ENTITYCALL	</Arg>
+		</onEnter>
+		<!-- 离开后的事件通知 -->
+		<onLeave>
+			<Arg>	INT32	</Arg>
+		</onLeave>
+	</CellMethods>
+</root>

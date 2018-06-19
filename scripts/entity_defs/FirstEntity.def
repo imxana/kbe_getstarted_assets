@@ -1,0 +1,39 @@
+<root>
+	<!--属性定义-->
+    <Properties>
+        <!--角色的名字-->
+        <name>
+            <!--unicode作为名字类型-->
+            <Type>              UNICODE     </Type>
+            <!--BASE上拥有该属性-->
+            <Flags>             BASE        </Flags>
+        </name>
+    </Properties>
+	
+	
+	<ClientMethods>
+	</ClientMethods>
+
+	<!--base上的方法声明-->
+	<BaseMethods>
+		<!--say hello指令-->
+		<hello>
+			<!--hello的内容-->
+			<Arg>   UNICODE         </Arg>
+		</hello>
+		<createCell>
+			<!--场景的CELL ENTITYCALL-->
+			<Arg>   ENTITYCALL      </Arg>
+		</createCell>
+
+	</BaseMethods>
+
+	<CellMethods>
+		<hello>
+			<!--该参数可以让此方法暴露给客户端调用-->
+			<Exposed/>
+			<!--hello的内容-->
+			<Arg>   UNICODE         </Arg>
+		</hello>
+	</CellMethods>
+</root>

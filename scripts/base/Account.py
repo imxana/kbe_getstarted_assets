@@ -4,8 +4,29 @@ from KBEDebug import *
 
 class Account(KBEngine.Proxy):
 	def __init__(self):
+		"""
+		账号实体
+		客户端登陆到服务端后，服务端将自动创建这个实体，通过这个实体与客户端进行账户相关交互
+		"""
 		KBEngine.Proxy.__init__(self)
 		
+	def createCell(self, sceneCell):
+		"""
+		创建cell部分
+		:param sceneCell:场景的cellEntityCall
+		"""
+		# API：创建该实体的cell部分
+		self.createCellEntity(sceneCell)
+
+	def enterGame(self):
+        """
+        客户端点击进入游戏按钮后发来的请求
+        :return:
+        """
+        self.client.onEnterGameSuccess()
+        # 把自己传送到指定的scene
+        KBEngine.globalData["scene"].loginToScene(self)
+
 	def onTimer(self, id, userArg):
 		"""
 		KBEngine method.
