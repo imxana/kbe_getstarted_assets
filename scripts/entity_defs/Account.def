@@ -2,9 +2,6 @@
 	<Properties>
 	</Properties>
 
-	<ClientMethods>
-	</ClientMethods>
-
 	<BaseMethods>
 		<createCell>
 			<!--Scene的CELL ENTITYCALL-->

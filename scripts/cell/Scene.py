@@ -8,7 +8,6 @@ class Scene(KBEngine.Entity):
 	"""
 	def __init__(self):
 		KBEngine.Entity.__init__(self)
-		...
 		# 存储在globalData中，方便获取
 		KBEngine.globalData["scene"] = self.base
 		
@@ -34,8 +33,3 @@ class Scene(KBEngine.Entity):
 		del KBEngine.globalData["scene"]
 		# api：销毁scene实体所在的空间
 		self.destroySpace()
-
-
-
-
-

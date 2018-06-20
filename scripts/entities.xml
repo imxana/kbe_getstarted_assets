@@ -6,7 +6,8 @@
 	-->
 
 	<!-- <Avatar/> -->
-	<Account hasClient="true"></Account><!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
+	<Account hasClient="true"></Account>
+	<!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
 	<FirstEntity hasClient="true"></FirstEntity>
 	<Scene></Scene>
 </root>
