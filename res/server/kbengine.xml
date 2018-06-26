@@ -58,8 +58,8 @@
 		
 		<databaseInterfaces>
 			<default>
-				<!-- <host> localhost </host> -->
-				<!-- <databaseName> kbe </databaseName> -->
+				<host> localhost </host> <!-- 请改成你的数据库IP地址 -->
+				<databaseName> kbe </databaseName>
 			</default>
 		</databaseInterfaces>
 	</dbmgr>

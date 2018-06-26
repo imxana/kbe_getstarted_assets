@@ -5,9 +5,7 @@
 					http://www.kbengine.org/cn/docs/programming/entitydef.html
 	-->
 
-	<!-- <Avatar/> -->
 	<Account hasClient="true"></Account>
-	<!-- <Account hasCell="true" hasBase="true" hasClient="true"></Account> -->
 	<FirstEntity hasClient="true"></FirstEntity>
 	<Scene></Scene>
 </root>
